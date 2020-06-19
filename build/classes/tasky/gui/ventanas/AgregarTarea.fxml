@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="vbMain" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="362.0" prefWidth="473.0" spacing="30.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tasky.gui.ventanas.AgregarTareaController">
+   <children>
+      <JFXTextField fx:id="tfNombre" labelFloat="true" promptText="¿Qué quieres hacer?" />
+      <HBox prefWidth="409.0" spacing="10.0">
+         <children>
+            <JFXComboBox fx:id="cbTipo" prefHeight="25.0" prefWidth="418.0" promptText="Selecciona el tipo de tarea" />
+            <JFXTextField fx:id="tfMax" prefWidth="0.0" promptText="Ingresa el máximo" />
+         </children>
+      </HBox>
+      <Accordion>
+        <panes>
+          <TitledPane animated="false" prefHeight="332.0" prefWidth="409.0" text="Actividades">
+               <content>
+                  <VBox prefHeight="70.0" prefWidth="407.0" />
+               </content>
+            </TitledPane>
+        </panes>
+      </Accordion>
+      <JFXTextArea fx:id="taNota" labelFloat="true" prefHeight="67.0" prefWidth="409.0" promptText="Nota" />
+      <HBox prefWidth="409.0" spacing="30.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Prioridad:" />
+            <JFXRadioButton fx:id="rbAlta" text="Alta" />
+            <JFXRadioButton fx:id="rbNormal" text="Normal" />
+            <JFXRadioButton fx:id="rbBaja" text="Baja" />
+         </children>
+      </HBox>
+      <DatePicker fx:id="dtDate" prefHeight="25.0" prefWidth="415.0" promptText="Selecciona la fecha" />
+      <HBox alignment="CENTER_RIGHT" prefWidth="409.0" spacing="10.0">
+         <children>
+            <JFXButton fx:id="btCancelar" onAction="#cerrar" prefHeight="29.0" prefWidth="62.0" text="Cancelar" />
+            <JFXButton fx:id="btAgregar" onAction="#agregarTarea" prefHeight="29.0" prefWidth="93.0" style="-fx-background-color: #5f5fc4;" text="Agregar" textFill="WHITE" />
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>

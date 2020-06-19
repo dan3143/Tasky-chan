@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox stylesheets="@pantallaprincipal.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tasky.gui.ventanas.TareasPaneController">
+   <children>
+      <VBox>
+         <children>
+            <HBox fx:id="hbInformacionCategoria" alignment="CENTER_LEFT" prefHeight="88.0" prefWidth="109.0" spacing="20.0" style="-fx-background-color: #FFF; -fx-border-color: #FFF;">
+               <children>
+                  <Text fx:id="txtNombre" strokeType="OUTSIDE" strokeWidth="0.0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <ImageView fx:id="imgBorrar" fitHeight="26.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../resources/imagenes/delete.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="imgEditar" fitHeight="57.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../resources/imagenes/edit.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </HBox>
+            <HBox fx:id="hbAgregarTarea" alignment="CENTER" onMouseClicked="#abrirAgregarTarea" prefHeight="56.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0.5 0 0.5 0;">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Agregar tarea">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox fx:id="vbTareas" />
+   </children>
+</VBox>

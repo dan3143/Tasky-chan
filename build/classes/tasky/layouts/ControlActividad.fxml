@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<VBox fx:id="vbAct" prefHeight="50.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <GridPane fx:id="gpActividad" alignment="CENTER_LEFT" hgap="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="800.0">
+         <children>
+            <CheckBox fx:id="cbCompletada" mnemonicParsing="false" />
+            <Text fx:id="nombreActividad" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Text fx:id="txtFecha" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="2" GridPane.hgrow="ALWAYS" />
+            <Text fx:id="txtPrioridad" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="3" GridPane.hgrow="ALWAYS" />
+            <ImageView fx:id="imgBorrar" fitHeight="26.0" fitWidth="23.0" onMouseClicked="#borrar" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.hgrow="ALWAYS">
+               <image>
+                  <Image url="@../../../resources/imagenes/delete.png" />
+               </image>
+            </ImageView>
+         </children>
+         <columnConstraints>
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="108.0" minWidth="0.0" prefWidth="0.0" />
+            <ColumnConstraints halignment="LEFT" hgrow="ALWAYS" maxWidth="448.0" minWidth="10.0" prefWidth="271.0" />
+            <ColumnConstraints halignment="LEFT" hgrow="ALWAYS" maxWidth="277.0" minWidth="10.0" prefWidth="94.0" />
+            <ColumnConstraints halignment="LEFT" hgrow="ALWAYS" maxWidth="277.0" minWidth="10.0" prefWidth="58.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="277.0" minWidth="10.0" />
+         </columnConstraints>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="NEVER" />
+         </rowConstraints>
+      </GridPane>
+      <VBox fx:id="vbSub" prefHeight="0.0">
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+      </VBox>
+   </children>
+</VBox>

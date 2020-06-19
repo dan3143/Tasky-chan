@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="vbCategorias" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: transparent;" stylesheets="@pantallaprincipal.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tasky.controllers.CategoriasPaneController">
+   <children>
+      <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="70.0" prefWidth="400.0" style="-fx-background-color: transparent; -fx-border-width: 0 0 0.5 0; -fx-border-color: white;" styleClass="agregar">
+         <children>
+            <JFXTextField fx:id="tfAgregarCategoria" focusColor="WHITE" labelFloat="true" prefHeight="39.0" prefWidth="404.0" promptText="Ingresa el nombre de una categoría" style="-fx-prompt-text-fill: white; -fx-text-fill: white;" unFocusColor="#468300">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXTextField>
+         </children>
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox fx:id="hbCosasParaHoy" alignment="CENTER_LEFT" prefHeight="50.0" spacing="15.0">
+         <children>
+            <ImageView fitHeight="28.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../resources/imagenes/today.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Cosas para hoy" />
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>

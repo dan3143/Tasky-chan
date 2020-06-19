@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="pane" prefHeight="131.0" prefWidth="357.0" style="-fx-background-color: #FDFFFC; -fx-background-radius: 10; -fx-border-color: black; -fx-border-radius: 10;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tasky.utilidades.InputDialogController">
+   <children>
+      <JFXButton fx:id="btAceptar" buttonType="RAISED" layoutX="254.0" layoutY="82.0" onAction="#aceptar" prefHeight="31.0" prefWidth="84.0" ripplerFill="BLACK" style="-fx-background-color: #C14953;" text="ACEPTAR" textFill="WHITE" />
+      <JFXButton fx:id="btCancelar" layoutX="168.0" layoutY="85.0" onAction="#cancelar" text="CANCELAR" />
+      <JFXTextField fx:id="tfDatos" focusColor="#c14953" layoutX="18.0" layoutY="47.0" prefHeight="25.0" prefWidth="322.0" unFocusColor="#848fa5" />
+      <Text fx:id="textMessage" layoutX="18.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingresa los datos:">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

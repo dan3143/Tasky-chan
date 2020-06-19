@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="145.0" prefWidth="394.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tasky.controllers.BienvenidaController">
+   <children>
+      <Label layoutX="18.0" layoutY="14.0" text="¿Cómo te llamas?">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="tfNombre" focusColor="#f67e7d" layoutX="20.0" layoutY="52.0" prefHeight="25.0" prefWidth="355.0" unFocusColor="#5a819e" />
+      <JFXButton fx:id="btComencemos" layoutX="258.0" layoutY="95.0" onAction="#registrarNombre" prefHeight="33.0" prefWidth="117.0" style="-fx-background-color: #6cc3bd;" text="¡Comencemos!" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
